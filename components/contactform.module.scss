@@ -1,0 +1,173 @@
+@import "../styles/theme";
+
+
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/functions";
+
+
+.form {
+  color: theme-color("light-text");
+  font-weight: lighter;
+
+  .buttonAndSuccess {
+    display: flex;
+    align-items: center;
+  }
+
+  label {
+    line-height: 30px;
+    font-size: 28px;
+  }
+
+  input, button, textarea {
+    border: none;
+    border-bottom: 1px solid theme-color("secondary");
+    width: 100%;
+    margin-bottom: 72px;
+    outline: none;
+  }
+
+  button {
+    width: 108px;
+    background: none;
+    font-weight: bold;
+    color: theme-color("primary");
+    border-bottom: 1px solid theme-color("secondary");
+    text-align: left;
+    font-size: 30px;
+    line-height: 28px;
+    padding: 0 0 20px 0;
+    margin-top: 72px;
+    &:disabled {
+      border-color: theme-color-level(secondary, -10);
+      color: theme-color-level(primary, -10);
+      cursor: not-allowed;
+    }
+  }
+
+  textarea {
+    resize: none;
+    height: 213px;
+  }
+
+  // Define vars we'll be using
+  $loader-size: 3em;
+  $check-height: $loader-size/2;
+  $check-width: $check-height/2;
+  $check-left: ($loader-size/6 + $loader-size/12);
+  $check-thickness: 3px;
+  $check-color: theme-color("secondary");
+
+  .circle-loader {
+    margin-left: 30px;
+    margin-top: 20px;
+    justify-items: center;
+    margin-bottom: $loader-size/2;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-left-color: $check-color;
+    animation: loader-spin 1.2s infinite linear;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    width: $loader-size;
+    height: $loader-size;
+  }
+
+  .load-complete {
+    -webkit-animation: none;
+    animation: none;
+    border-color: $check-color;
+    transition: border 500ms ease-out;
+  }
+
+  .checkmark {
+    display: none;
+
+    &.draw:after {
+      animation-duration: 800ms;
+      animation-timing-function: ease;
+      animation-name: checkmark;
+      transform: scaleX(-1) rotate(135deg);
+    }
+
+    &:after {
+      opacity: 1;
+      height: $check-height;
+      width: $check-width;
+      transform-origin: left top;
+      border-right: $check-thickness solid $check-color;
+      border-top: $check-thickness solid $check-color;
+      content: '';
+      left: $check-left;
+      top: $check-height;
+      position: absolute;
+    }
+  }
+
+  @keyframes loader-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes checkmark {
+    0% {
+      height: 0;
+      width: 0;
+      opacity: 1;
+    }
+    20% {
+      height: 0;
+      width: $check-width;
+      opacity: 1;
+    }
+    40% {
+      height: $check-height;
+      width: $check-width;
+      opacity: 1;
+    }
+    100% {
+      height: $check-height;
+      width: $check-width;
+      opacity: 1;
+    }
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+  .form {
+    margin-bottom: 131px;
+
+    label {
+      font-size: 25px;
+      line-height: 28px;
+    }
+
+    button {
+      display: block;
+      margin: 50px auto;
+    }
+
+    textarea {
+      height: 206px;
+    }
+
+    .buttonAndSuccess {
+      display: flex;
+      flex-direction: column;
+    }
+    .circle-loader {
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+  }
+}
+
+

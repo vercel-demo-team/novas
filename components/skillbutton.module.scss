@@ -1,0 +1,17 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../styles/theme";
+
+.skillButton {
+  margin: 25px 0;
+  max-width: 156px;
+  text-align: center;
+
+  .underline {
+    background-color: theme-color("secondary");
+    min-height: 1px;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+}
+

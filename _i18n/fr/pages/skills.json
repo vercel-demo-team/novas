@@ -1,0 +1,168 @@
+{
+
+    "droit-public": {
+
+        "title": "Droit Public",
+        "cards": [
+            {
+                "title": "Urbanisme",
+                "bullets": [
+                    "Accompagnement dans l’élaboration des dossiers de demande d’autorisation",
+                    "Contentieux (collectivité, demandeur et tiers)",
+                    "Urbanisme réglementaire : plan local d’urbanisme (PLU)",
+                    "Gestion des risques"
+                ]
+            },
+            {
+                "title": "Fonction Public",
+                "bullets": [
+                    "Gestion de carrière : mutation, promotion, changement de corps, disponibilité...",
+                    "Maladie et accident : congé de longue maladie ou de longue durée, reclassement, retraite anticipée, contestation du taux d’invalidité",
+                    "Disciplinaire : sanctions du fonctionnaire",
+                    "Situation de harcèlement moral"
+                ]
+            }
+        ]
+
+    },
+
+    "droit-des-etrangers": {
+
+        "title": "Droit des étrangers",
+        "cards": [
+            {
+                "title": "Titres de séjour et visas",
+                "bullets": [
+                    "Accompagnement dans l’élaboration d’un dossier de demande de titre séjour ou d’un visa",
+                    "Accompagnement des employeurs pour l’embauche d’un salarié étranger",
+                    "Contentieux des refus de titres de séjour (vie privée et familiale, étranger malade, salarié, étudiant...), des visas"
+                ]
+            },
+            {
+                "title": "Éloignement",
+                "bullets": [
+                    "Contentieux des obligations de quitter le territoire français (OQTF), des interdictions de retour sur le territoire français (IRTF) et des assignations à résidence",
+                    "Contentieux des arrêtés d’expulsion"
+                ]
+            },
+            {
+                "title": "Asile",
+                "bullets": [
+                    "Contentieux des transferts au sein de l’espace Schengen (procédure « Dublin »)",
+                    "Contentieux des conditions matérielles d’accueil (CMA) : hébergement et allocation de demandeur d’asile (ADA)"
+                ]
+            },
+            {
+                "title": "Regroupement familial",
+                "bullets": [
+                    "Accompagnement pour une procédure de regroupement familial",
+                    "Contentieux en cas de refus de délivrance d’un visa"
+                ]
+            },
+            {
+                "title": "Nationalité française",
+                "bullets": [
+                    "Accompagnement dans l’élaboration d’un dossier de demande de nationalité française (par déclaration ou décret) ",
+                    "Contentieux des refus ou ajournements des demandes de naturalisations",
+                    "Contentieux des retraits de la nationalité française"
+                ]
+            },
+            {
+                "title": "Mineurs isolés",
+                "bullets": [
+                    "Accompagnement des mineurs étrangers isolés pour la reconnaissance de leur minorité",
+                    "Contentieux des refus de contrats jeunes majeurs"
+                ]
+            }
+        ]
+
+    },
+
+    "droit-penal": {
+        "title": "Droit Pénal",
+        "cards": [
+            {
+                "title": "Défense pénale",
+                "bullets": [
+                    "Conseil sur le risque pénal (droit pénal des affaires)",
+                    "Accompagnement et assistance au cours des mesures de garde à vue et d’audition libre",
+                    "Défense du mis en cause dans les procédures contraventionnelles, correctionnelles et criminelles, devant toutes les juridictions pénales (Tribunal de Police, Tribunal Correctionnel, Cour d’Assises)",
+                    "Assistance au cours des procédures de comparution sur reconnaissance préalable de culpabilité",
+                    "Défense des mineurs devant le Juge des Enfants et le Tribunal pour Enfants",
+                    "Assistance au cours de l’instruction judiciaire (interrogatoire de première comparution, audition, confrontation, demande de mise en liberté, demande de modification du contrôle judiciaire, requête en nullité de procédure…)",
+                    "Défense devant le délégué du Procureur (rappel à loi, composition pénale, médiation pénale)",
+                    "Droit douanier"
+                ]
+            },
+            {
+                "title": "Défense des victimes d’infractions",
+                "bullets": [
+                    "Défense des parties civiles devant toutes les juridictions pénales (Tribunal de Police, Tribunal Correctionnel, Cour d’Assises)",
+                    "Assistance aux confrontations au cours de l’enquête",
+                    "Assistance au cours de l’instruction judiciaire (audition, confrontation, expertise médicale…)",
+                    "Requête devant la Commission d’Indemnisation des Victimes d’Infractions (CIVI)",
+                    "Saisie du Service d’Aide au Recouvrement des Victimes d’Infractions (SARVI)"
+                ]
+            },
+            {
+                "title": "Droit de l’exécution des peines",
+                "bullets": [
+                    "Requête en aménagement de peine (détention à domicile sous surveillance électronique, placement extérieur, semi-liberté, libération conditionnelle, conversion en jours-amende ou en travail d’intérêt général)",
+                    "Assistance devant le Juge d’Application des Peines et le Tribunal d’Application des Peines",
+                    "Contentieux disciplinaire au sein des centres de détention",
+                    "Requête en confusion de peine",
+                    "Requête en réhabilitation"
+                ]
+            }
+        ]
+    },
+
+    "droit-du-prejudice-corporel": {
+        "title": "Droit du préjudice corporel",
+        "cards": [
+            {
+                "title": "Indemnisation des accidents de la circulation",
+                "bullets": [
+                    "Requête auprès du Fonds de Garantie des Assurances Obligatoires (en cas de responsable non assuré ou inconnu)",
+                    "Préparation et assistance au cours des expertises médicales",
+                    "Evaluation du préjudice corporel des victimes directes et indirectes (notamment en cas de décès d’un proche)",
+                    "Assistance au cours de la procédure amiable avec l’assureur du responsable",
+                    "Assistance devant le Tribunal Judiciaire en vue de la liquidation du préjudice"
+                ]
+            },
+            {
+                "title": "Indemnisation des accidents médicaux et infections nosocomiales",
+                "bullets": [
+                    "Procédure devant la Commission de Conciliation et d’Indemnisation des Accidents Médicaux",
+                    "Saisie du Tribunal Administratif ou du Tribunal Judiciaire en cas de responsabilité médicale"
+                ]
+            },
+            {
+                "title": "Indemnisation des accidents de la vie",
+                "bullets": [
+                    "Accidents domestiques",
+                    "Accidents liés à la pratique d’une activité sportive ou d’un loisir",
+                    "Accidents scolaires",
+                    "Accidents impliquant des animaux",
+                    "Accidents advenus dans un établissement ouvert au public (chute…)"
+                ]
+            },
+            {
+                "title": "Indemnisation des accidents dans le cadre professionnel",
+                "bullets": [
+                    "Procédure en reconnaissance de la faute inexcusable de l’employeur",
+                    "Indemnisation des accidents du travail",
+                    "Indemnisation des accidents de trajet ",
+                    "Indemnisation des maladies professionnelles"
+                ]
+            },
+            {
+                "title": "Indemnisation des victimes d’infractions",
+                "bullets": [
+                    "Accompagnement devant les juridictions pénales",
+                    "Demande d’indemnisation auprès des Fonds de Garantie"
+                ]
+            }
+        ]
+    }
+}

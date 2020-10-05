@@ -1,0 +1,28 @@
+@import "../node_modules/bootstrap/scss/variables";
+
+#skills {
+
+  .cardRows {
+    margin: 120px 0;
+  }
+
+  .cardRow {
+    padding: 15px 0;
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+  #skills {
+    .cardRows {
+      margin: 10px 0;
+    }
+
+    .cardRow {
+      padding: 0;
+      :first-child & .col-12 {
+        margin-top: 30px;
+      }
+    }
+  }
+}

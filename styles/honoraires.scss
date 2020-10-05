@@ -1,0 +1,27 @@
+@import "../node_modules/bootstrap/scss/variables";
+
+#honoraires {
+
+  .title {
+    margin-bottom: 120px;
+  }
+
+  .honoraireInfo {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 0 15px;
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+  #honoraires {
+    .title {
+      margin-bottom: 10px;
+    }
+    .honoraireInfo {
+      text-align: justify;
+      margin: 0 15px;
+    }
+  }
+}

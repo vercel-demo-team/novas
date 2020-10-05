@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "Gilbert";
+  src: url("../fonts/GilbertColorBoldPreview5.woff") format("woff");
+}
+@keyframes lineAppearance {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 2px;
+  }
+}
+#index .novas-lines.small-screen {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+#index .novas-lines.large-screen {
+  animation: 1s ease-in 0.5s 1 forwards lineAppearance;
+  position: absolute;
+  background: #00896B;
+  top: 0;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: rotate(323deg);
+  -moz-transform: rotate(323deg);
+  -ms-transform: rotate(323deg);
+  transform: rotate(323deg);
+  z-index: 11;
+}
+#index .novas-lines.large-screen.one {
+  height: 501px;
+  left: 43.5%;
+}
+#index .novas-lines.large-screen.two {
+  height: 1127px;
+  left: 45%;
+}
+#index .welcome {
+  max-height: 900px;
+}
+#index .welcome .main {
+  display: flex;
+}
+#index .welcome .main .right img {
+  width: 556px;
+  height: 900px;
+  z-index: -1;
+  object-fit: cover;
+  position: relative;
+}
+#index .welcome .main .left img {
+  margin-left: -124px;
+}
+#index .welcome .main .left p {
+  max-width: 804px;
+  margin-top: 140px;
+  font-size: 24px;
+  line-height: 35px;
+}
+#index .welcome .main .left strong {
+  font-size: 17px;
+  line-height: 45px;
+}
+#index .titleSection {
+  margin-bottom: 72px;
+}
+#index .skillbar {
+  font-size: 25px;
+  line-height: 28px;
+  background-color: #F5FAFA;
+  width: 100%;
+  margin: 0 !important;
+  max-width: none !important;
+}
+#index .skillbar .row {
+  margin: auto;
+  max-width: 1054px;
+}
+#index .actualites, #index .cabinet {
+  color: #464545;
+  margin-top: 168px;
+  margin-bottom: 168px;
+}
+#index .actualites h3, #index .cabinet h3 {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 47px;
+}
+#index .actualites .row:first-child, #index .cabinet .row:first-child {
+  margin-bottom: 68px;
+}
+#index .actualites p, #index .cabinet p {
+  font-size: 30px;
+  line-height: 45px;
+}
+#index .actualites strong, #index .cabinet strong {
+  font-size: 17px;
+  line-height: 45px;
+}
+#index footer {
+  color: #464545;
+  font-weight: lighter;
+  background-color: #F5FAFA;
+  padding: 24px 0 24px 166px;
+}
+@media (max-width: 767.98px) {
+  #index .novas-lines.small-screen {
+    position: absolute;
+    top: 43px;
+    width: 100%;
+    height: 280px;
+    stroke: #00896B;
+    stroke-width: 2px;
+  }
+  #index .novas-lines.large-screen {
+    display: none;
+  }
+  #index .welcome .main {
+    flex-direction: column-reverse;
+  }
+  #index .welcome .main .right {
+    padding: 0;
+  }
+  #index .welcome .main .right img {
+    width: 100%;
+    height: 213px;
+    object-fit: cover;
+  }
+  #index .welcome .main .left p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #index .welcome .main .left a {
+    display: block;
+    text-align: center;
+  }
+  #index .welcome .main .left img {
+    max-width: 323px;
+    display: block;
+    margin: 50px auto 30px auto;
+    max-height: 170px;
+  }
+  #index .skillbar {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  #index .skillbar .row {
+    margin: 54px 0;
+  }
+  #index .actualites, #index .cabinet {
+    margin-top: 73px;
+    margin-bottom: 73px;
+  }
+  #index .actualites h3, #index .cabinet h3 {
+    min-height: 77px;
+  }
+  #index .actualites p, #index .cabinet p {
+    line-height: 29px;
+    font-size: 24px;
+  }
+  #index .actualites strong, #index .cabinet strong {
+    line-height: 45px;
+    font-size: 17px;
+  }
+  #index .actualites .row:first-child, #index .cabinet .row:first-child {
+    margin-bottom: 0;
+  }
+  #index .actualites .row:first-child, #index .biographies .row:first-child {
+    margin-bottom: 53px;
+  }
+  #index .biographies .row:first-child {
+    margin-top: 53px;
+  }
+  #index footer {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1300px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1300px), only screen and (min-device-pixel-ratio: 2) and (min-width: 1300px), only screen and (min-resolution: 192dpi) and (min-width: 1300px), only screen and (min-resolution: 2dppx) and (min-width: 1300px) {
+  #index .welcome .main .left img {
+    width: 406px;
+    height: 114px;
+    margin-left: -82px;
+  }
+  #index .welcome .main .left p {
+    max-width: 509px;
+    margin-top: 94px;
+  }
+  #index .contact input, #index .contact button, #index .contact textarea {
+    margin-bottom: 48px;
+  }
+  #index .actualites, #index .cabinet {
+    margin-top: 112px;
+    margin-bottom: 112px;
+  }
+  #index .actualites .row:first-child, #index .cabinet .row:first-child {
+    margin-bottom: 52px;
+  }
+  #index footer {
+    padding: 16px 0 16px 111px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

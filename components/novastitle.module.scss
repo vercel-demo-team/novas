@@ -1,0 +1,93 @@
+@import '../styles/transform-mixins';
+
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../styles/theme";
+
+%line {
+  background-color: theme-color("secondary");
+  width: 90px;
+  height: 1px;
+  @include rotate(80deg);
+  @include transform-origin(left);
+  position: absolute;
+}
+
+.novasTitle {
+
+  position: relative;
+
+  h2 {
+    font-size: 62px;
+    line-height: 1;
+    padding-left: 16.5px;
+    margin-bottom: 0;
+  }
+
+  .firstline {
+    @extend %line;
+    top: 15px;
+  }
+
+  .secondline {
+    @extend %line;
+    top: 50px;
+    left: 20px;
+  }
+
+  .underline {
+    position: absolute;
+    top: 15px;
+    height: 35px;
+    width: 550px;
+    background: #f5fafa 0 0 no-repeat padding-box;
+    z-index: -1;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+
+  .novasTitle {
+    h2 {
+      font-size: 50px;
+      line-height: 84px;
+      padding-left: 0 !important;
+    }
+
+    .secondline {
+      display: none;
+    }
+
+    .firstline {
+      margin: 0 0 0 -16px;
+      width: 114px;
+      @include rotate(0);
+    }
+    .underline {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px),
+only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1300px),
+only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1300px),
+only screen and (min-device-pixel-ratio: 2) and (min-width: 1300px),
+only screen and (min-resolution: 192dpi) and (min-width: 1300px),
+only screen and (min-resolution: 2dppx) and (min-width: 1300px) {
+  .novasTitle {
+    h2 {
+      font-size: 42px;
+      padding-left: 12px;
+    }
+
+    .underline {
+      bottom: 35px;
+    }
+
+    .firstline {
+      width: 75px;
+    }
+  }
+}

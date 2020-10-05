@@ -1,0 +1,138 @@
+@use "../styles/variables" as v;
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../styles/theme";
+
+$hamburger-layer-color: theme-color("secondary");
+$hamburger-layer-height : 2px;
+$hamburger-layer-width  : 21px;
+$hamburger-padding-x    : 0px;
+
+
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
+.navbar {
+  height: v.$navbar-height;
+  width: 100%;
+  position: absolute;
+  top: 2vh;
+  z-index: 10;
+  background-color: $body-bg;
+
+  .buttonNav {
+    button {
+      display: none
+    }
+  }
+
+  #novas-logo {
+    position: absolute;
+    width: 230px;
+    height: 65px;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+
+    nav {
+      ul {
+        display: flex;
+        margin-bottom: 0;
+      }
+
+      &.main {
+        margin-right: 140px;
+        padding-left: 0;
+        font-size: 23px;
+        line-height: 29px;
+        font-family: Gilbert;
+
+        li {
+          padding: 2px 12px 2px 12px;
+        }
+      }
+
+      &.lang {
+        display: none;
+      }
+
+    }
+
+    .closeNavBtn {
+      display: none;
+    }
+
+    .socialNetNav {
+      display: flex;
+    }
+  }
+}
+
+
+@include media-breakpoint-down(sm) {
+
+  #novas-logo {
+    display: none;
+  }
+
+  .navbar {
+    height: v.$navbar-height-mobile;
+    display: flex;
+    flex-direction: column;
+    position: unset;
+
+    .buttonNav {
+      color: theme-color("secondary");
+      display: flex;
+      justify-content: flex-start;
+      button {
+        display: flex
+      }
+    }
+
+    .nav {
+      width: 0;
+      justify-content: center;
+      height: 100%; /* 100% Full-height */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background-color: theme-color("primary");
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+      nav {
+        a {
+          color: theme-color("light")
+        }
+
+        ul {
+          flex-direction: column;
+        }
+      }
+
+      &.active {
+        width: 100%;
+      }
+
+      .closeNavBtn {
+        color: theme-color("secondary");
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+    }
+  }
+}
+

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Gilbert";
+  src: url("../fonts/GilbertColorBoldPreview5.woff") format("woff");
+}
+.skillButton {
+  margin: 25px 0;
+  max-width: 156px;
+  text-align: center;
+}
+.skillButton .underline {
+  background-color: #00896B;
+  min-height: 1px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/*# sourceMappingURL=skillbutton.module.css.map */

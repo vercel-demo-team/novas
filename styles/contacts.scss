@@ -1,0 +1,97 @@
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../node_modules/bootstrap/scss/variables";
+
+#contacts {
+  .address {
+    padding: 10px 0;
+    margin-bottom: 120px;
+    width: 100%;
+    text-align: center;
+    background-color: theme-color("light-secondary");
+    font-family: "Gilbert", serif;
+    font-size: 28px;
+    line-height: 35px;
+    color: theme-color("primary");
+  }
+
+  .map {
+    min-height: 400px;
+    min-width: 100%;
+    margin-bottom: 160px;
+  }
+
+  .infoSup {
+    margin: 20px 0 100px 0;
+    .mobiliteReduite, .infoCab {
+      line-height: 25px;
+      font-size: 20px;
+      text-align: justify;
+    }
+  }
+
+  .infoAvocats {
+
+    .contactItem {
+      margin: 0 0 100px 0;
+
+      h2 {
+        font-size: 28px;
+      }
+
+      .coordonnees {
+        a {
+          display: block;
+          margin: 20px 0 0 40px;
+          font-size: 22px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+
+  form {
+    input {
+      margin-bottom: 30px;
+    }
+
+    label {
+      line-height: 24px;
+      font-size: 22px;
+    }
+
+    textarea {
+      height: 130px
+    }
+
+    button {
+      font-size: 22px;
+      line-height: 24px;
+      width: 90px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #contacts {
+
+    .address {
+      margin-bottom: 20px;
+    }
+
+    .map {
+      iframe {
+        height: 100% !important;
+      }
+    }
+
+    .infoAvocats {
+
+      .contactItem {
+        margin: 20px 0;
+        .coordonnees {
+        }
+      }
+    }
+  }
+}

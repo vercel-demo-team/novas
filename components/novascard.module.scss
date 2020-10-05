@@ -1,0 +1,67 @@
+@use "sass:math";
+@import "../styles/theme";
+@import '../styles/transform-mixins';
+
+$card-cap-color: theme-color("primary");
+$card-cap-bg: theme-color("light-secondary");
+$headder-height: 70px;
+$angle: 60deg;
+$line-lenght: math.round($headder-height / math.sin($angle));
+$card-border-radius: 0;
+$box-shadow: 0.1rem .25rem .6rem rgba(black, .15) !default;
+
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/card";
+
+%line {
+  background-color: theme-color("secondary");
+  width: $line-lenght;
+  height: 1px;
+  @include rotate($angle);
+  @include transform-origin(left);
+  position: absolute;
+}
+
+.novasCard{
+
+  box-shadow: $box-shadow;
+
+  ul {
+    list-style-type: initial;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .header {
+    height: $headder-height;
+    font-family: "Gilbert", serif;
+    display: flex;
+    align-items: center;
+  }
+
+  .firstline {
+    @extend %line;
+    top: 0;
+    right: 10px;
+  }
+
+  .secondline {
+    @extend %line;
+    top: 0;
+    right: 25px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .novasCard {
+    .firstline {
+      display: none;
+    }
+
+    .secondline {
+      display: none;
+    }
+  }
+}

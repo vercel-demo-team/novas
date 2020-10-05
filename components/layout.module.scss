@@ -1,0 +1,13 @@
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+.main {
+  margin: 0;
+}
+
+@include media-breakpoint-down(sm) {
+  .main {
+    margin: 0;
+  }
+}

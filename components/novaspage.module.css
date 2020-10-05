@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Gilbert";
+  src: url("../fonts/GilbertColorBoldPreview5.woff") format("woff");
+}
+.novasPage .navBar {
+  margin-bottom: 160px;
+  padding: 0;
+}
+
+@media (max-width: 767.98px) {
+  .novasPage .navBar {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=novaspage.module.css.map */

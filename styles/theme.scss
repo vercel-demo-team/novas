@@ -1,0 +1,18 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+@font-face {
+  font-family: "Gilbert";
+  src: url("../fonts/GilbertColorBoldPreview5.woff") format("woff");
+
+}
+
+$theme-colors: (
+        "primary": #464545,
+        "secondary": #00896B,
+        "light-secondary": #F5FAFA,
+        "light-text": #8D8D8D
+);
+
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$link-hover-decoration: none !default;
+$link-hover-color: theme-color("secondary");

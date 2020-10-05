@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "items": [
+      {
+        "text": "Cabinet",
+        "value": "/fr/cabinet"
+      },
+      {
+        "text": "Compétences",
+        "value": "/fr/competence"
+      },
+      {
+        "text": "Honoraires",
+        "value": "/fr/honoraires"
+      },
+      {
+        "text": "Actualités",
+        "value": "/fr/actualites"
+      },
+      {
+        "text": "Contact",
+        "value": "/fr/contacts"
+      }
+    ]
+  }
+}

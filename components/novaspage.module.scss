@@ -1,0 +1,21 @@
+@import "../styles/theme";
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+
+.novasPage {
+
+  .navBar {
+    margin-bottom: 160px;
+    padding: 0;
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+  .novasPage {
+    .navBar {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import 'theme.scss';
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "index";
+@import "contacts";
+@import "skills";
+@import "honoraires";
+
+@media screen and (min-width: 1500px) {
+  .container {
+    max-width: 1360px !important;
+  }
+}
+
+ul {
+  list-style-type: none
+}
+
+li {
+  color: theme-color("primary")
+}
+
+h2 {
+  font-family: "Gilbert", serif;
+  color: #464545
+}
+
+p {
+  color: theme-color("primary");
+}
+
+strong {
+  color: theme-color("primary");
+}
+
